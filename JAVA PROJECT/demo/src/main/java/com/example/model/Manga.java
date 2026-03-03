@@ -3,6 +3,7 @@ package com.example.model;
 
 //Atributos: título, volume, resenha, pontos
 public class Manga {
+    private int id;
     private String title;
     private int volume;
     private String review;
@@ -10,6 +11,14 @@ public class Manga {
 
 //Construtor
     public Manga(String title, int volume, String review, int points) {
+        this.title = title;
+        this.volume = volume;
+        this.review = review;
+        this.points = points;
+    }
+
+    public Manga(int id, String title, int volume, String review, int points) {
+        this.id = id;
         this.title = title;
         this.volume = volume;
         this.review = review;
@@ -25,6 +34,10 @@ public class Manga {
     public String LerManga(){
         return "Lendo o manga " + title;
     }
+
+    public int getId(){ return id; }
+
+    public void setId(int id) { this.id = this.id; }
     
     public String getTitle() {
         return title;
