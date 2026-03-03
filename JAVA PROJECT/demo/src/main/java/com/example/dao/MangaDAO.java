@@ -10,6 +10,8 @@ import com.example.database.ConnectionFactory;
 import com.example.model.Manga;
 
 public class MangaDAO{
+
+
     public void salvar (Manga manga) {
         String sql = " INSERT INTO mangas (titulo, review, volume, points) VALUES (?, ?, ?, ?)";
         try (
@@ -60,6 +62,4 @@ public class MangaDAO{
 
         return mangas;
     }
-
-    
 }
