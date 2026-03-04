@@ -6,9 +6,24 @@ import java.util.List;
 import com.example.database.ConnectionFactory;
 import com.example.model.Manga;
 
+
 public class MangaDAO{
 
+    //DELETAR TUDO DO BD
+    public void deletedAll(){
+        String sql = "DELETE FROM mangas";
 
+        try (
+                Connection conn = ConnectionFactory.getConnection();
+                PreparedStatement stmt = conn.prepareStatement(sql);
+        ) {
+            stmt.executeUpdate();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+// SALVAR DO OBJ MANGA PARA O BD
     public void salvar (Manga manga) {
         String sql = " INSERT INTO mangas (titulo, review, volume, points) VALUES (?, ?, ?, ?)";
         try (
@@ -21,8 +36,6 @@ public class MangaDAO{
             stmt.setInt(3, manga.getVolume());
             stmt.setInt(4, manga.getPoints());
             stmt.executeUpdate();
-
-            System.out.println("Manga salvo com sucesso!");
         }
         catch(Exception e){
             e.printStackTrace();

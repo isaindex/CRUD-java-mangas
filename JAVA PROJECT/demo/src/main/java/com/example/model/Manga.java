@@ -10,13 +10,6 @@ public class Manga {
     private int points;
 
 //Construtor
-    public Manga(String title, int volume, String review, int points) {
-        this.title = title;
-        this.volume = volume;
-        this.review = review;
-        this.points = points;
-    }
-
     public Manga(int id, String title, int volume, String review, int points) {
         this.id = id;
         this.title = title;
@@ -36,13 +29,11 @@ public class Manga {
     }
 
     public int getId(){ return id; }
-
-    public void setId(int id) { this.id = this.id; }
+    public void setId(int id) { this.id = id; }
     
     public String getTitle() {
         return title;
     }
-
     public void setTitle(String title){
         this.title = title;
     }
@@ -50,7 +41,6 @@ public class Manga {
     public void setVolume(int volume) {
         this.volume = volume;
     }
-    
     public int getVolume() {
         return volume;
     } 
@@ -61,6 +51,7 @@ public class Manga {
     public String getReview(){
         return review;
     }
+
     public void setPoints(int points){
         this.points = points;
     }
