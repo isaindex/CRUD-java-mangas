@@ -5,6 +5,7 @@ Projeto simples em Java que implementa um CRUD (Create, Read, Update e Delete) d
 A ideia do projeto surgiu para me ajudar a organizar os mangás e volumes que já li, e ao mesmo tempo praticar manipulação de dados e estruturação de um sistema em Java.
 
 No futuro, pretendo evoluir o projeto para uma versão web.
+
 ---
 
 ## 📌 Funcionalidades
