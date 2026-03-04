@@ -31,7 +31,8 @@ public class MangaService {
 
         System.out.println("Digite sua nota para esse mangá:");
         mangaNew.setPoints(sc.nextInt());
-        sc.close();
+
+        sc.nextLine();
 
         dao.salvar(mangaNew);
     }
