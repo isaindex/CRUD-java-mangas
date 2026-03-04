@@ -54,12 +54,12 @@ git clone https://github.com/isaindex/CRUD-java-mangas.git
 2. Abra o projeto na sua IDE.
 
 3. Execute a classe principal (ex: `Main`).
-
 Ou pelo terminal:
 
-```bash
 javac *.java
 java Main
+
+(Caso o nome da classe principal seja diferente, ajuste o comando.)
 ```
 
 
