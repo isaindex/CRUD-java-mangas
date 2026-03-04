@@ -60,7 +60,7 @@ Ou pelo terminal:
 javac *.java
 java Main
 ```
-(Caso o nome da classe principal seja diferente, ajuste o comando.)
+_(Caso o nome da classe principal seja diferente, ajuste o comando.)_
 
 ---
 
@@ -73,7 +73,7 @@ java Main
 Projeto desenvolvido para fins de estudo e prática de CRUD em Java, aplicado a uma ideia pessoal de organização de leitura, com planos futuros de transformar em aplicação web.
 ---
 
-Se quiser evoluir o projeto, você pode:
+_Se quiser evoluir o projeto, você pode:_
 
 * Melhorar a organização dos pacotes
 * Adicionar validações
